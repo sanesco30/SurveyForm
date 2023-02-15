@@ -1,0 +1,195 @@
+<!DOCtype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Santiago Escobar Alvarez">
+    <meta name="description" content="This is a survey form about social media">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form about Social Media</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+   <div class="container">
+    <header class="header">
+     <h1 id="title" class="text-center">Social Media Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you to participate in this short survey about social media platforms
+    </p>
+  </header>
+ 
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="surname-label" for="surname">Surname</label>
+      <input
+        type="text"
+        name="surname"
+        id="surname"
+        class="form-control"
+        placeholder="Enter your surname"
+        required
+      />
+    </div>      
+    
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <label id="country-label" for="country">Country <span class="clue">(optional)</span></label>
+      <input
+             type="text"
+             name="country"
+             id="country"
+             class="form-control"
+             placeholder="Enter your country"/>
+    </div>
+    
+    <div class="form-group">
+      <label id="number-label" for="number">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="partTime">Part Time Job</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p> Do you enjoy Social Media? </p>
+      <label>
+        <input
+               type="radio"
+               name="user-enjoy"
+               value="yes"
+               class="input-radio"
+               checked
+               />Yes</label>
+      <label>
+        <input
+               type="radio"
+               name="user-enjoy"
+               value="no"
+               class="input-radio"
+               />No</label>
+      <label>
+        <input
+               type="radio"
+               name="user-enjoy"
+               value="sometimes"
+               class="input-radio"
+               />Sometimes</label>
+    
+      <label>
+        <input
+               type="radio"
+               name="user-enjoy"
+               value="rarely"
+               class="input-radio"
+               />Rarely</label>
+    </div>
+    
+    <div class="form-group">
+      <p>What Social Media do you prefer the most?</p>
+      <select id="mostlike" name="mostlike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="facebook">Facebook</option>
+        <option value="twitter">Twitter</option>
+        <option value="instagram">Instagram</option>
+        <option value="youtube">Youtube</option>
+        <option value="tiktok">TikTok</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>
+        What things do you like to watch or listen to on Social Media?<span class="clue">(Check all that apply)</span></p>
+      <label>
+        <input
+               name="prefer"
+               value="photos"
+               type="checkbox"
+               class="input-checkbox"/>Photos</label>
+      <label>
+        <input
+               name="prefer"
+               value="videos"
+               type="checkbox"
+               class="input-checkbox"/>Videos</label>
+      <label>
+        <input
+               name="prefer"
+               value="podcast"
+               type="checkbox"
+               class="input-checkbox"/>Postcast
+      </label>
+      
+      <label>
+        <input
+               name="prefer"
+               value="live-boadcasts"
+               type="checkbox"
+               class="input-checkbox"/>Live Broadcasts</label>
+      
+      <label>
+        <input
+               name="prefer"
+               value="user-generated-content"
+               type="checkbox"
+               class="input-checkbox"/>User-Generated Content</label>
+    </div>
+
+    <div class="form-group">
+      <p>Briefly comment your opinion about Social Media platforms and if you think they have a positive or negative impact nowadays</p>
+      <textarea
+      id="comment"
+      class="input-textarea"
+      name="comment"
+      placeholder="Enter your comment here...">
+      </textarea>
+      </div>
+
+      <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+     </button>
+    </div>
+   </form>
+  </div>
+ </body>
+</html>
